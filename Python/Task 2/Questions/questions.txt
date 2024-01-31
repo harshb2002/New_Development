@@ -1,0 +1,15 @@
+Write a Python script that retrieves data from a given URL and displays relevant information. You can choose a public API or a website that provides easily accessible data.
+Requirements:
+	URL Selection:
+●	Choose a URL that provides publicly accessible data. For example, you could use a weather API, a cryptocurrency API, or a news website that offers an API.
+
+	HTTP Request:
+●	Use the requests library in Python to make an HTTP request to the chosen URL. Handle the response appropriately.
+
+	Data Extraction:
+●	Extract relevant information from the response. For instance, if you're fetching weather data, extract temperature, humidity, and weather conditions.
+
+	Store Information:
+●	Store the extracted information in a specific table.
+	Error Handling:
+●	Implement error handling to manage cases where the request fails or the data extraction encounters issues.
