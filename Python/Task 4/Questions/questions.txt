@@ -1,0 +1,13 @@
+1.Print the current date using datetime and date libraries.
+2.Convert a datetime to a string.
+3.Get the difference between two dates in days.
+4.Get the date which is 1 week from today's date.
+5.Get the date which is 1 year from today's date.
+6.Get the date which is 1 month from today's date.
+7.Get the 1st day of the current month from today's date.
+8.Get the 1st month of the current year from today's date.
+9.Get the dates of current month starting from Monday to Sunday in a list. 
+10.Get the first date and last date of the current month.
+11.Get me the 1st and last date of the current month in the format as following. '14th June 2016 Tuesday 10:00:00 AM'.
+12.Calculate your age in years, months and days. 
+
