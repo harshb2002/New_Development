@@ -1,0 +1,15 @@
+1.Write a select query with multiple conditions using ‘AND’ and ‘OR’.
+2.Create a table employee where it contains id, name, city. Find the city which ends with ‘abad’. Enter 30 records scattered in different cities like Hyderabad, Ahmedabad, Mumbai, Delhi, Chennai, Kochin, Kolkatta, Pune, Bangalore.
+3.Search records where the city contains the string ‘under’.
+4.Search records where the third last character of the city is ‘b’.
+5.Search the records where first character of the city is ‘A’.
+6.Search the records where second Character of the city is ‘o’.
+7.Search first 10 records.
+8.Search first 5 records where city is Mumbai
+9.Search first 5 records where city is Mumbai or Bangalore. Search the next 5 records skipping the first 5 records where city is Mumbai or Bangalore.
+10.Sort the records where city is Mumbai or Bangalore by City Name.
+11.Sort all the records of the table by ID in descending order.
+12.Insert few records where the city is not entered. Search all the records where the city field is blank.
+13.Add a date field in the existing table. Search the records where date is in current year.
+14.Enter few duplicate records where name is duplicate. Select unique records from a table.
+15.Enter a column amount in the table. Get a total of the complete amount.
