@@ -1,0 +1,73 @@
+--1
+select * from public."Employee"
+where (department = 'IT' and salary > 20000 or city = 'Rajkot')
+
+--2
+select * from public."Employee"
+where city like '%abad'
+
+--3
+select * from public."Employee"
+where city like '%under%'
+
+--4
+select * from public."Employee"
+where substring(city, length(city)-2, 1) = 'b'
+
+--5
+select * from public."Employee"
+where city like 'A%'
+
+--6
+select * from public."Employee"
+where substring(city, 2, 1) = 'o'
+
+--7
+select * from public."Employee" limit 10
+
+--8
+select * from public."Employee" 
+where city = 'Mumbai' limit 2
+
+--9
+select * from public."Employee"
+where city = 'Mumbai' or city='Bangalore' limit 5
+
+--10
+select * from public."Employee"
+where city = 'Mumbai' or city='Bangalore' order by city limit 5
+
+
+--11
+select * from public."Employee"
+order by id desc
+
+--12
+select * from public."Employee"
+where city = ''
+
+--13
+Update public."Employee"
+set joining_date = current_date
+select * from public."Employee"
+where joining_date = current_date
+select * from public."Employee"
+
+
+--14
+select distinct * from public."Employee" order by id
+
+--15
+update public."Employee"
+set amount = 20000
+select sum(amount) as total_amount from public."Employee"
+
+select * from student
+where city in ('Mumbai' , 'Bangalore')
+order by phone limit 5 offset 5;
+
+SELECT * FROM public."Employee" WHERE date_part('year', joining_date) = date_part('year', CURRENT_DATE);
+
+select distinct name from public."Employee" order by name
+
+--Sql queries in pgadmin 4
