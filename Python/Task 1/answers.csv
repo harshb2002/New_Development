@@ -1,0 +1,25 @@
+Answers
+"[A]:Wick van Rossum			B:Rasmus Lerdorf
+[C]:Guido van Rossum			D:Niene Stomma"
+"A:object-oriented programming				B:structured programming
+C:functional programming				[D]:All of These"
+"A:No				[B]:Yes
+C:Machine Dependent		D:None of these"
+"A:.python			[B]:.py
+C:.pl				D:.p"
+"A:Capitalized			[B]:lower case
+[C]:UPPER CASE			D:None of these"
+"[A]:Indentation				B:Key
+C:Brackets				D:All of these"
+"A:Function			[B]:def
+C:Fun				D:Define"
+"A://				[B]:#
+C:!				D:/*"
+"A:Pip Install Python				B:Pip Install Packages
+[C]:Preferred Installer Program			D:All of these"
+"A:|			[B]://
+C:/			D:%"
+"[A]:5	B:25 
+ C:50		[D]:10"
+"A: 10	[B]:20 
+ C:25		D:50"
