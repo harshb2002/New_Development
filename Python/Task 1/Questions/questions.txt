@@ -1,0 +1,36 @@
+Create an application 'Exam' in python, which has two sections Admin and Student.
+Admin:
+1. Admin is responsible for managing User Login Details (Username, Password) in a csv file.
+2. Create another csv file which will have Questions marked from 1 - 10.
+3. Create another csv file which will have Options like MCQs marked from A to D for each question.
+	Example: A:Option1,B: Option2,[C]: Option3,D: Option4
+
+Mark correct answer with [] just like above example has [C]. 
+Note: Correct answer must not be shown to Student giving exam. He must be able to see options just like below:
+
+Question 1: Who is the second fastest batsman to reach 25 hundreds in Tests ?
+A: Sachin Tendulkar								B: Alastair Cook
+C: Virat Kohli									D: Steve Smith
+
+Enter your answer: C
+
+Answer entered by user will be compared with the file having options containing correct answer (i.e. [D]). If the answer in the file with [ ] matches the answer entered by user then give 1 marks else don't do anything.
+At the end when the exam is finished, show the result to the student: "Your result : 50% Passed"
+
+Student:
+Students will be asked to enter his credentials for login:
+Username and Password.
+1. Compare Username and Password of the student with the file containing credentials.
+a) If username doesn't exists in the file, Show proper error message. Please ask administrator for registration.
+b) If user enters wrong password, then it should show: Wrong Password. Please enter correct password.
+	and user should be again be asked for Password.
+
+When the exam is over, store student's result in the file containing credentials like: sachin,sachin@1234,50%
+
+Validations:
+1. There should only be one correct answer in the file containing Answers.
+2. There must be exactly 4 options for each question in the file containing Questions.
+3. Username and Password validation.
+
+student.py file will be responsible for user interface for student that will manage everything from Login to Result.
+
