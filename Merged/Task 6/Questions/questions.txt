@@ -1,1 +1,0 @@
-Do all the operation on SQL table from creating a table to CRUD operations in a table by Python and reflect the changes in the pgAdmin 4.
