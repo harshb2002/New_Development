@@ -1,0 +1,754 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root {
+    --bg-color: #eaf8ea;
+    --text-color: #000000;
+    --main-color: #38ad08;
+
+    --big-font: 6rem;
+    --p-font: 1.1rem;
+}
+body{
+    overflow-x: hidden;
+}
+
+header {
+    padding-top: 20px;
+    background-color: white;
+}
+
+.logo {
+    /* border: 2px solid black; */
+    width: 180px;
+    height: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12%;
+    background-color: white;
+    transition: all ease .45s;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.menu-btn {
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+section {
+    padding: 0 15%;
+}
+
+.home {
+    background-color: var(--bg-color);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    clip-path: polygon(0 0,
+            /* top left */
+            100% 0,
+            /* top right */
+            100% 85%,
+            /* start curving before the bottom right */
+            50% 90%,
+            /* deepest point of the curve in the middle */
+            0 85%
+            /* start curving before the bottom left */
+        );
+}
+
+.home-img {
+    width: 730px;
+    height: 730px;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-text {
+    background-color: white;
+    padding: 3%;
+    margin: 3%;
+}
+
+.organic {
+    padding: 3%;
+    background-color: var(--bg-color);
+    font-weight: 700;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    margin: 23px 0;
+    font-weight: 700;
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 400;
+    color: #c3c3c3;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: 2 px solid var(--main-color);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: transparent;
+    color: var(--main-color);
+}
+
+.cards-container {
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 20px; 
+    gap: 20px; 
+  }
+  
+.card {
+    flex: 0 0 auto;
+    width: 190px; 
+    /* background-color: #f5f5f5;  */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    padding: 15px;
+    border-radius: 10px; 
+  }
+
+
+  /* .container-1 {
+    display: flex;
+  }
+
+  .image-box {
+    position: relative; 
+    border: 2px solid #dee2e6;
+    padding: 8px; 
+    margin-right: 35px;
+    border-radius: 10px;
+  }
+  .image-box img {
+    display: block;
+    width: 100%; 
+    height: auto; 
+  } */
+
+  /* .image-text {
+    position: absolute; 
+    bottom: 70px; 
+    left: 70px; 
+    color: black;
+    padding: 5px; 
+  }  */
+
+
+  .cards-container-4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 23px;
+  }
+
+  .c1 {
+    flex: 0 0 auto;
+    width: 49%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .img_text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  .img_text span {
+    font-weight: 500;
+    font-size: 2.5vw;
+  }
+
+  /* .btn1 {
+    background-color: rgb(65, 205, 0);
+    margin-top: 5%;
+    padding: 2% 4%;
+    border-radius: 5px;
+    border-color: rgb(65, 205, 0);
+    font-size: 1.3vw;
+  } */
+
+  .btn1 {
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: 2 px solid var(--main-color);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 60px;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn1:hover {
+    transform: translateY(-3px);
+    background: transparent;
+    color: var(--main-color);
+}
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1399px) {
+
+    .img_text {
+      font-size: 1.5vw;
+    }
+
+    .img_text span {
+      font-size: 2.5vw;
+    }
+
+    .btn1 {
+      font-size: 0.8vw;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+
+    .img_text {
+      font-size: 13px;
+    }
+
+    .img_text span {
+      font-size: 18px;
+    }
+
+    .btn1 {
+      margin-bottom: 10px;
+      font-size: 8px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .img_text {
+      font-size: 8px;
+    }
+
+    .img_text span {
+      font-size: 12px;
+    }
+
+    .btn1 {
+      font-size: 6px;
+      margin-left: 23px;
+      padding: 8px 15px;
+    }
+  }
+
+
+  @media screen and (max-width: 515px) {
+
+    .img_text {
+      font-size: 8px;
+      margin-left: 6px;
+    }
+
+    .img_text span {
+      font-size: 13px;
+    }
+
+    .btn1 {
+      font-size: 6px;
+    }
+  }
+
+  @media screen and (max-width: 532px) {
+
+    .img_text {
+      font-size: 8px;
+      margin-left: 6px;
+    }
+
+    .img_text span {
+      font-size: 13px;
+    }
+
+    .btn1 {
+      font-size: 6px;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+
+    .img_text {
+      font-size: 7px;
+      margin-top: 4px;
+      margin-left: 10px;
+    }
+
+    .img_text span {
+      font-size: 10px;
+      margin-top: 5px;
+    }
+
+    .btn1 {
+      margin-left: 0px;
+      margin-top: 5px;
+      font-size: 4px;
+      padding: 7px 16px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 486px) {
+
+    .img_text {
+      font-size: 7px;
+      margin-top: 4px;
+      margin-left: 10px;
+    }
+
+    .img_text span {
+      font-size: 10px;
+      margin-top: 5px;
+    }
+
+    .btn1 {
+      margin-left: 0px;
+      margin-top: 5px;
+      font-size: 4px;
+      padding: 6px 15px;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+
+    .img_text {
+      font-size: 4px;
+      margin-top: 4px;
+      margin-left: 10px;
+    }
+
+    .img_text span {
+      font-size: 9px;
+      margin-top: 5px;
+    }
+
+    .btn1 {
+      margin-top: -5px;
+      font-size: 3px;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+
+    .img_text {
+      font-size: 10px;
+    }
+
+    .img_text span {
+      font-size: 15px;
+    }
+
+    .btn1 {
+      font-size: 8px;
+    }
+  }
+
+  
+
+
+
+
+.Heading{
+    text-transform: uppercase;
+}
+
+.cards-container-1 {
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 20px; 
+    gap: 20px; 
+  }
+  
+.card-1 {
+    flex: 0 0 auto;
+    width: 297px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    background-color: #f6f8fb;
+    padding: 15px;
+    border-radius: 10px; 
+  }
+
+  .container-2 {
+    display: flex; /* Aligns the divs horizontally */
+    flex-wrap: wrap;
+  }
+
+  .image-box-1 {
+    position: relative; /* Enables absolute positioning of the text inside */
+    margin-right: 35px; /* Space between the two divs */
+    background-color: #f6f8fb;
+    margin: 20px;
+    margin-left: 3%;
+  }
+  .image-box-1 img {
+    display: block; /* Removes bottom margin/whitespace beneath the image */
+    width: 100%; /* Makes the image fill the div */
+    height: auto;
+    padding: 32px; /* Keeps the image aspect ratio */
+  }
+  .image-text-1 {
+    position: absolute; /* Positions the text over the image */
+    color: black; /* Text color */
+    padding: 10px;
+    margin-left: 29%;
+  }
+
+  .star-rating {
+    font-size: 1; /* Removes space between inline elements */
+    color: gold; /* Color for empty stars */
+  }
+  .star-rating span {
+    font-size: 1.0rem; /* Smaller size for stars */
+    display: inline-block;
+    position: relative;
+  }
+  .star-rating span:before {
+    content: "\2605"; /* Unicode character for solid star */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif; /* Ensures consistent font rendering */
+    color: #ccc; /* Default color for empty part of star */
+  }
+  .star-rating .full:before,
+  .star-rating .half:before {
+    color: gold; /* Color for filled stars */
+    -webkit-text-stroke: 1px gold; /* Outlines the star for smoother edges */
+    text-shadow: 
+      0px 0px 5px gold, /* Softens the edges */
+      0px 0px 2px gold; /* Creates a slight glow effect */
+  }
+  .star-rating .half:before {
+    width: 50%; /* Show half star */
+  }
+
+  .line-container{
+    position: relative; 
+    height: 1px; 
+    background-color: #ccc; 
+}
+.colored-line {
+    position: absolute;
+    width: 5%; 
+    height:2px;
+    background-color: rgb(65, 205, 0); 
+}
+
+
+.btn-3 {
+  display: inline-block;
+  padding: 10px 34px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  border: 2 px solid var(--main-color);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.6s ease-in-out;
+}
+
+.btn-3:hover {
+  transform: translateY(-3px);
+  background: transparent;
+  color: var(--main-color);
+}
+
+.con1{
+  width: 270px; 
+  height: 325px; 
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius:3%; 
+  margin-left:4% ;
+  background-color:#f6f8fb;
+}
+
+.container-3 {
+  display: flex;
+  /* Creates a flexbox layout */
+  flex-wrap: wrap;
+  /* Allows items to wrap as needed */
+  align-items: center;
+  /* Vertically centers the flex items */
+  padding: 20px;
+  /* Adds padding around the content */
+}
+
+
+
+.image-grid-2 {
+  display: grid;
+  /* Utilizes grid layout for the images */
+  grid-template-columns: repeat(2, 1fr);
+  /* Creates two columns, making them flexible */
+  grid-gap: 10px;
+  /* Adds gap between grid items */
+  max-width: 200px;
+  /* Sets a max width for the image grid */
+  flex-grow: 1;
+  /* Allows the image grid to grow */
+  margin-left: 21%;
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+.image-box-2 {
+  width: 210px;
+  /* Sets width for each image box */
+  height: 210px;
+  /* Sets height for each image box */
+  display: flex;
+  /* Uses flexbox for centering image */
+  align-items: center;
+  /* Centers image vertically */
+  justify-content: center;
+  /* Centers image horizontally */
+  background-color: #f0f0f0;
+  /* Background color for image box */
+}
+
+.image-box-2 img {
+  max-width: 100%;
+  /* Ensures image does not exceed its container */
+  max-height: 100%;
+  /* Ensures image does not exceed its container */
+}
+
+.tilt-left,
+.tilt-right {
+  border-radius: 15px;
+  margin: 15px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #f6f8fc;
+  /* Vertically center the text */
+}
+
+.tilt-left {
+  transform: rotate(-4deg);
+  /* Tilts the div to the left */
+}
+
+.tilt-right {
+  transform: rotate(4deg);
+  /* Tilts the div to the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container-3 {
+      flex-direction: column;
+      /* Stacks the items vertically on smaller screens */
+  }
+
+  .text-section,
+  .image-grid-2 {
+      padding-right: 0;
+      /* Removes the right padding on smaller screens */
+      max-width: 100%;
+      /* Allows these elements to fill the container */
+      text-align: center;
+      /* Centers the text */
+  }
+
+  .image-grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+      /* Adjusts grid columns for smaller screens */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .image-grid-2 {
+      grid-template-columns: 1fr;
+      /* Single column layout for very small screens */
+  }
+}
+
+.grid-item {
+  width: 100%; /* Make each grid item fill its cell */
+  height: 150px; /* Set a specific height for each grid item */
+  position: relative; /* Needed to properly position the images */
+}
+.grid-item img {
+  width: 100%; /* Make the images fill their respective divs */
+  height: 100%; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image covers the div without stretching */
+}
+
+.container-4 h5{
+  text-align: center;
+  text-transform: uppercase;
+  color: #38ad08;
+  font-weight: 700;
+}
+
+.container-4 h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btns{
+  margin-left: 28%;
+}
+
+.container-5 {
+  display: flex; /* Aligns the divs horizontally */
+  flex-wrap: wrap;
+}
+
+.image-box-3 {
+  position: relative; /* Enables absolute positioning of the text inside */
+  margin-right: 35px; /* Space between the two divs */
+  background-color: #f6f8fb;
+  margin: 20px;
+  margin-left: 3%;
+}
+.image-box-3 img {
+  display: block; /* Removes bottom margin/whitespace beneath the image */
+  width: 100%; /* Makes the image fill the div */
+  height: auto;
+  padding: 40px; /* Keeps the image aspect ratio */
+}
+.image-text-3 {
+  position: absolute; /* Positions the text over the image */
+  color: black; /* Text color */
+  padding: 10px;
+  margin-left: 29%;
+}
+
+.text-line {
+  display: flex;
+  align-items: center;
+}
+.line {
+  height: 2px;
+  width: 700px; /* Adjust the width as needed */
+  background-color: #b2b5c8; /* Line color */
+  margin-bottom: 10px;
+  margin-left: 2px;
+}
+
+#footer_img{
+  width: 70px;
+  height: 70px;
+}
+
+#container-7{
+  background-color: var(--main-color);
+  color: white;
+}
+
+#container-7 p{
+  margin-left: 38%;
+  margin-top: 15px;
+}
+
+.launch-time{
+  display: flex;
+}
+
+.launch-time div{
+  flex-basis: 200px;
+}
+
+.launch-time div p{
+  font-size: 60px;
+  margin-bottom: -14px;
+}
+
+/* .launch-time div p span{
+  font-size: 20px;
+  margin-bottom: -14px;
+} */
